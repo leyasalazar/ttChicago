@@ -18,8 +18,8 @@ body{
 nav{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  column-gap: 50px;
+  justify-content: space-between;
+  column-gap: 30%;
   align-items: center;
   position: sticky; 
   top: 0;
@@ -29,9 +29,9 @@ nav{
 nav ul{
   justify-content: center;
   align-self: flex-end;
-  flex-grow: 4;
-  /* border: 1px red solid; */
-  width: 100%;
+  align-items: center;
+  /* flex-grow: 4; */
+  width: 30%;
 }
 ul{
   display: inline-flex;
@@ -42,12 +42,16 @@ li{
   list-style: none;
   padding-right: 5%;
 }
+nav ul li{
+  padding: 0 10%;
+}
 nav ul a{
   font-weight: 600;
   font-size: 1rem;
+  color: #7553A6;
 }
 nav ul a:hover{
-  text-decoration: underline;
+  color: #56B5BF;
 }
 .logo{
   /* border: 1px red solid; */
@@ -58,6 +62,7 @@ nav ul a:hover{
 }
 .user img{
   width: 30px;
+  border-radius: 0;
 }
 a{
   text-decoration: none;
@@ -88,10 +93,13 @@ main p{
 }
 .button{
   font-size: 1.1rem;
-  background-color: blueviolet;
+  background-color: #56B5BF;
   color: white;
   padding: 2% 3%;
   border-radius: 25px;
+}
+.button:hover{
+  background-color: #699EBF;
 }
 #about{
   height: 90vh;
@@ -117,7 +125,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 2% 4%;
-  background-color: blueviolet;
+  background-color: #7553A6;
   border-radius: 20px 20px 0 0;
   color: white;
 }
@@ -130,7 +138,7 @@ footer a{
   color: white;
 }
 footer a:hover{
-  text-decoration: underline;
+color: #56B5BF;
 }
 footer img{
   width: 150px;

@@ -1,0 +1,239 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/******************************************
+/*nav bar
+/*******************************************/
+body{
+    margin: 0;
+    padding: 0 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+  }
+  
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 30%;
+    align-items: center;
+    position: sticky; 
+    top: 0;
+    background-color: white;
+    padding-top: 1%;
+  }
+  nav ul{
+    justify-content: center;
+    align-self: flex-end;
+    align-items: center;
+    /* flex-grow: 4; */
+    width: 30%;
+  }
+  ul{
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  li{
+    list-style: none;
+    padding-right: 5%;
+  }
+  nav ul li{
+    padding: 0 10%;
+  }
+  nav ul a{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #7553A6;
+  }
+  nav ul a:hover{
+    color: #56B5BF;
+  }
+  .logo{
+    /* border: 1px red solid; */
+    width: 20%;
+  }
+  .logo > img{
+    width: 80%;
+  }
+  .user img{
+    width: 30px;
+    border-radius: 0;
+  }
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+/******************************************
+/* user profile
+/*******************************************/
+
+main{
+    padding: 0 10% 5%;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+}
+h3 {
+    margin: 0;
+    text-align: center;
+    padding: 3%;
+    font-size: 1.5rem;
+}
+
+.userMatch {
+    display: flex;
+    gap: 5%;
+    width: 100%;
+   height: 45vh;
+
+}
+
+/* .match {
+    display: flex;
+   width: 50%;
+    /* max-height: 100%; */
+    /* flex-direction: column;
+} */ 
+
+.photoGreeting {
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1%;
+    width: 50%;
+}
+.button{
+    font-size: 1.1rem;
+    background-color: #56B5BF;
+    color: white;
+    padding: 2% 3%;
+    border-radius: 25px;
+  }
+  .button:hover{
+    background-color: #699EBF;
+  }
+.infoGreeting {
+ height: 100%;
+ display: flex;
+ width: 50%;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    gap: 1%;
+    font-size: 1rem;
+}
+
+.prof {
+  width: 60%;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.textBox ul {
+    padding:0;
+    padding-left: 4%;
+}
+
+.bottomLinks {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin-top: 3%;
+    gap: 5%;
+}
+
+.calendar, .userLinks  {
+   width: 50%;
+    height: 100%;
+
+}
+
+
+
+.fitCalendar {
+    min-height: 80%;
+    width: 100%;
+    padding-top: 70%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 0;
+}
+
+.responsive {
+    position: absolute;
+    top: 100px;
+ left: 0;
+ /* bottom: 0; */
+ /* right: 0; */
+ width: 100%;
+ height: 100%;
+ padding-bottom: 15%;
+}
+
+.userLinks ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 3% 0;
+    height: 100px;
+}
+
+.userLinks ul li {
+    padding-right: 4%;
+    font-size: 1rem;
+    width: 50px;
+}
+.userLinks a {
+    color: purple;
+}
+
+.userLinks span {
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+.techLinks *{
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0;
+    text-decoration: none;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+    background-color: #7553A6;
+    border-radius: 20px 20px 0 0;
+    color: white;
+  }
+  footer div{
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  footer a{
+    color: white;
+  }
+  footer a:hover{
+  color: #56B5BF;
+  }
+  footer img{
+    width: 150px;
+    height:fit-content;
+  }
+
