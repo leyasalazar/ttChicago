@@ -1,0 +1,141 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  padding: 0 10%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  column-gap: 50px;
+  align-items: center;
+  position: sticky; 
+  top: 0;
+  background-color: white;
+  padding-top: 1%;
+}
+nav ul{
+  justify-content: center;
+  align-self: flex-end;
+  flex-grow: 4;
+  /* border: 1px red solid; */
+  width: 100%;
+}
+ul{
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0;
+}
+li{
+  list-style: none;
+  padding-right: 5%;
+}
+nav ul a{
+  font-weight: 600;
+  font-size: 1rem;
+}
+nav ul a:hover{
+  text-decoration: underline;
+}
+.logo{
+  /* border: 1px red solid; */
+  width: 20%;
+}
+.logo > img{
+  width: 80%;
+}
+.user img{
+  width: 30px;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+main{
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+main section{
+  padding: 10% 0;
+  width: 50%;
+}
+main img{
+  width: 100%;
+  padding: 2% 5%;
+}
+main h1{
+  font-size: 4rem;
+}
+p{
+  font-size: 1.2rem;
+}
+main p{
+  padding-bottom: 10%;
+}
+.button{
+  font-size: 1.1rem;
+  background-color: blueviolet;
+  color: white;
+  padding: 2% 3%;
+  border-radius: 25px;
+}
+#about{
+  height: 90vh;
+  padding: 6% 0;
+}
+#about section{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#about img, #about div{
+  width: 50%;
+  padding: 2% 5%;
+}
+h2{
+  font-size: 1.5rem;
+  width: 100%;
+}
+footer{
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4%;
+  background-color: blueviolet;
+  border-radius: 20px 20px 0 0;
+  color: white;
+}
+footer div{
+  display: inline-flex;
+  flex-direction: column;
+  width: 50%;
+}
+footer a{
+  color: white;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+footer img{
+  width: 150px;
+  height:fit-content;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

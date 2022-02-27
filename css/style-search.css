@@ -1,0 +1,156 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  body{
+    padding: 0 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 50px;
+    align-items: center;
+    position: sticky; 
+    top: 0;
+    background-color: white;
+    padding-top: 1%;
+  }
+  nav ul{
+    justify-content: center;
+    align-self: flex-end;
+    flex-grow: 4;
+    /* border: 1px red solid; */
+    width: 100%;
+  }
+  ul{
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  li{
+    list-style: none;
+    padding-right: 5%;
+  }
+  nav ul a{
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  nav ul a:hover{
+    text-decoration: underline;
+  }
+  .logo{
+    /* border: 1px red solid; */
+    width: 20%;
+  }
+  .logo > img{
+    width: 80%;
+  }
+  .user img{
+    width: 30px;
+  }
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  main{
+    height: 82vh;
+    padding: 1% 10%;
+  }
+  main h2 + div{
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+      align-items: center;
+  }
+  input{
+      height: 25px;
+  }
+  /* main h2 + div {
+      width: 60%;
+  } */
+  ul li hover{
+      background-color: rgba(137, 43, 226, 0.13);
+  }
+ #jobs{
+      display: none;
+      width: 200px;
+      margin: 0;
+  }
+  #jobs li{
+      width: 200px;
+  }
+  main ul, li div{
+      display: flex;
+      flex-direction: column;
+  }
+  main section li{
+      display: inline-flex;
+      flex-direction: row;
+      padding-bottom: 2%;
+  }
+  li img{
+      width: 90px;
+      border-radius: 50px;
+      margin-right: 40px;
+  }
+  li div{
+      justify-content: center;
+  }
+  h3{
+      font-size: 1.2rem;
+      margin: 4% 0 3%;
+  }
+  p{
+    font-size: 1rem;
+    margin: 1% 0 4%;
+  }
+  
+h2{
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  footer{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+    background-color: blueviolet;
+    border-radius: 20px 20px 0 0;
+    color: white;
+    bottom: 0;
+    position: absolute;
+    width: 80%;
+  }
+  footer div{
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  footer a{
+    color: white;
+  }
+  footer a:hover{
+    text-decoration: underline;
+  }
+  footer img{
+    width: 150px;
+    height:fit-content;
+  }
+
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
